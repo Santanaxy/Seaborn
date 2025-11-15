@@ -12,14 +12,14 @@ dados = pd.DataFrame({
 
 palette = sns.color_palette("rocket_r")
 
-# ✅ AGORA SIM: usando col="Categoria" para subgráficos
+# col="Categoria" para subgráficos
 sns.relplot(
     data=dados,
     x="Satisfação", 
     y="Cliente",
     hue="Categoria",      # Cor por categoria
     size="Satisfação",    # Tamanho por satisfação
-    col="Categoria",      # ✅ CORRIGIDO: Subgráficos por categoria
+    col="Categoria",      # Subgráficos por categoria
     sizes=(100, 400),     # Tamanhos dos pontos
     palette=palette,
     height=5, 
